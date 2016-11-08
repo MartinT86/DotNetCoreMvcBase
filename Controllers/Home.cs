@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 //using System.Text.Encodings.Web;
+using MvcMovie.Models;
 
 namespace MvcMovie.Controllers
 {
@@ -10,7 +11,12 @@ namespace MvcMovie.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var model = new Home()
+            {
+                ID = 123,
+                Title = "Tester"
+            };
+            return View(model);
         }
 
         // 
