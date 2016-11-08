@@ -1,21 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
 //using System.Text.Encodings.Web;
 using MvcMovie.Models;
+using MvcMovie.Services;
 
 namespace MvcMovie.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IGetHomeModels _homeModelService;
+
+        public HomeController (IGetHomeModels homeModelService)
+        {
+            _homeModelService = homeModelService;        
+        }
+
         // 
         // GET: /HelloWorld/
 
         public IActionResult Index()
         {
-            var model = new Home()
-            {
-                ID = 123,
-                Title = "Tester"
-            };
+            var model = _homeModelService.GetHomeModel();
             return View(model);
         }
 

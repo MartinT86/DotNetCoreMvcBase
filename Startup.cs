@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Logging;
+using MvcMovie.Services;
+
 
 namespace aspnetcoreapp
 {
@@ -12,6 +14,8 @@ namespace aspnetcoreapp
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IGetHomeModels, HomeModelService>();
+
             services.AddMvc();
         }
 

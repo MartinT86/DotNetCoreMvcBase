@@ -161,6 +161,8 @@
 -resource:"/home/martin/Projects/coresite/obj/Debug/netcoreapp1.0/coresitedotnet-compile.deps.json",coresite.deps.json
 "/home/martin/Projects/coresite/Startup.cs"
 "/home/martin/Projects/coresite/Program.cs"
+"/home/martin/Projects/coresite/Services/HomeModelService.cs"
+"/home/martin/Projects/coresite/Services/Interfaces/IGetHomeModels.cs"
 "/home/martin/Projects/coresite/Controllers/Home.cs"
 "/home/martin/Projects/coresite/Controllers/HelloWorld.cs"
 "/home/martin/Projects/coresite/Models/HomeModel.cs"
