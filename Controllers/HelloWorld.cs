@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 //using System.Text.Encodings.Web;
 
-namespace MvcMovie.Controllers
+namespace CoreSite.Controllers
 {
     public class HelloWorldController : Controller
     {

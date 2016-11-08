@@ -1,10 +1,9 @@
-using System;
-using MvcMovie.Models;
+using CoreSite.Models;
 
-namespace MvcMovie.Services
+namespace CoreSite.Services
 {
     public interface IGetHomeModels
     {
-        Home GetHomeModel();
+        HomeModel GetHomeModel();
     }
 }

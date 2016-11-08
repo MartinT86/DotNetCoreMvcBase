@@ -1,9 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-//using System.Text.Encodings.Web;
-using MvcMovie.Models;
-using MvcMovie.Services;
+using CoreSite.Services;
 
-namespace MvcMovie.Controllers
+namespace CoreSite.Controllers
 {
     public class HomeController : Controller
     {
@@ -14,17 +12,11 @@ namespace MvcMovie.Controllers
             _homeModelService = homeModelService;        
         }
 
-        // 
-        // GET: /HelloWorld/
-
         public IActionResult Index()
         {
             var model = _homeModelService.GetHomeModel();
             return View(model);
         }
-
-        // 
-        // GET: /HelloWorld/Welcome/ 
 
         public string Welcome()
         {

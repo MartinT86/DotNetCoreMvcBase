@@ -1,13 +1,13 @@
 using System;
-using MvcMovie.Models;
+using CoreSite.Models;
 
-namespace MvcMovie.Services
+namespace CoreSite.Services
 {
     public class HomeModelService : IGetHomeModels
     {
-        public Home GetHomeModel()
+        public HomeModel GetHomeModel()
         {
-            return new Home()
+            return new HomeModel()
             {
                 ID = 123,
                 Title = "Tester from service"

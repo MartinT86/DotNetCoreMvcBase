@@ -1,8 +1,6 @@
-using System;
-
-namespace MvcMovie.Models
+namespace CoreSite.Models
 {
-    public class Home
+    public class HomeModel
     {
         public int ID { get; set; }
         public string Title { get; set; }
